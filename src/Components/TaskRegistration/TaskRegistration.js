@@ -90,7 +90,7 @@ const TaskRegister = () => {
                   className='form-control'
                   name='email'
                   type='email'
-                  defaultValue={loggedInUser.email}
+                  value={loggedInUser.email}
                   placeholder='Email'
                   ref={register({ required: true })}
                 />
