@@ -20,3 +20,13 @@
     right: 15px;
     height: 100%;
 } */
+
+.container-search {
+    color: black;
+}
+
+.container-search input {
+    color: black;
+    z-index: 1 !important;
+
+}

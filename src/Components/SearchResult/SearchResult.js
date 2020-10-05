@@ -24,7 +24,7 @@ const SearchResult = () => {
   return (
     <div className='container tasks-area'>
       <div className='row my-3'>
-        {searchResult.length === 0 && (
+        {(searchResult.length === 0 ) && (
           <h1 className='col-12 display-5 text-center'>No task found!</h1>
         )}
         {/* Pass filtered data to TaskItem component */}

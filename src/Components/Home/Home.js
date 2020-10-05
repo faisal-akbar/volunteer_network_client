@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <section className='banner d-flex align-items-center text-center'>
       
-      <div className='container'>
+      <div className='container container-search'>
         <h1>I grow by helping people in need.</h1>
         <div className='input-group col-md-6 my-5 mx-auto search-btn d-flex justify-content-center'>
           <input

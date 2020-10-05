@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../App';
+import PreLoader from '../PreLoader/PreLoader';
 // ==============================================================================
 
 const RegisteredDataTables = () => {
@@ -12,11 +13,17 @@ const RegisteredDataTables = () => {
   // Context from app.js
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
+  //PreLoader visibility
+  const [preLoaderVisibility, setPreLoaderVisibility] = useState('block');
+
   // Get all the Volunteer Register
   useEffect(() => {
     fetch('https://volunteer-network-react.herokuapp.com/adminTasks')
       .then((res) => res.json())
-      .then((data) => setTaskList(data));
+      .then((data) => {
+        setTaskList(data);
+        setPreLoaderVisibility('none');
+      });
   }, []);
 
   // Delete task when user click on delete button and update the dashboard
@@ -43,7 +50,9 @@ const RegisteredDataTables = () => {
 
   return (
     <>
+    <PreLoader visibility={preLoaderVisibility} />
       <div className='table-responsive'>
+      
         <table className='table table-borderless table-hover bg-white rounded my-4'>
           <thead className='thead-light'>
             <tr>
@@ -68,6 +77,7 @@ const RegisteredDataTables = () => {
             </tr>
           </thead>
           <tbody>
+          
             {taskList.map((task) => (
               <tr key={task._id}>
                 <td>{serialNo++}</td>
