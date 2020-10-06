@@ -30,23 +30,9 @@ const UserDashboard = () => {
         setUserTasks(data);
         setPreLoaderVisibility('none');
       });
-  }, [loggedInUser.email]);
+  }, [loggedInUser.email, userTasks]);
 
-  // When user Click on Cancel update the userDashboard view:
-  const handleDeleteUpdate = () => {
-    fetch(
-      'https://volunteer-network-react.herokuapp.com/userTasks?email=' +
-        loggedInUser.email,
-      {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => setUserTasks(data));
-  };
+
 
   return (
     <div className='container mt-5'>
@@ -60,7 +46,7 @@ const UserDashboard = () => {
           <UsersTasks
             key={task._id}
             task={task}
-            handleDeleteUpdate={handleDeleteUpdate}
+            // handleDeleteUpdate={handleDeleteUpdate}
             // deleteFromCart={deleteFromCart}
           />
         ))}
@@ -70,3 +56,26 @@ const UserDashboard = () => {
 };
 
 export default UserDashboard;
+
+
+
+
+
+
+
+
+  // When user Click on Cancel update the userDashboard view:
+  // const handleDeleteUpdate = () => {
+  //   fetch(
+  //     'https://volunteer-network-react.herokuapp.com/userTasks?email=' +
+  //       loggedInUser.email,
+  //     {
+  //       method: 'GET',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //     }
+  //   )
+  //     .then((res) => res.json())
+  //     .then((data) => setUserTasks(data));
+  // };

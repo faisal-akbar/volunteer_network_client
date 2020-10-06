@@ -13,7 +13,8 @@ const UsersTasks = (props) => {
       .then((res) => res.json())
       .then((result) => {
         if (result) {
-          props.handleDeleteUpdate();
+          console.log(result);
+          // props.handleDeleteUpdate();
         }
       });
   };

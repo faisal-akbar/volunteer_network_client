@@ -24,7 +24,7 @@ const RegisteredDataTables = () => {
         setTaskList(data);
         setPreLoaderVisibility('none');
       });
-  }, []);
+  }, [taskList]);
 
   // Delete task when user click on delete button and update the dashboard
   const deleteTaskAdmin = (_id) => {
@@ -34,25 +34,17 @@ const RegisteredDataTables = () => {
       .then((res) => res.json())
       .then((result) => {
         if (result) {
-          handleDeleteUpdateAdmin();
+          console.log(result);
         }
       });
-  };
-
-  // handle delete update
-  const handleDeleteUpdateAdmin = () => {
-    fetch('https://volunteer-network-react.herokuapp.com/adminTasks')
-      .then((res) => res.json())
-      .then((data) => setTaskList(data));
   };
 
   let serialNo = 1;
 
   return (
     <>
-    <PreLoader visibility={preLoaderVisibility} />
+      <PreLoader visibility={preLoaderVisibility} />
       <div className='table-responsive'>
-      
         <table className='table table-borderless table-hover bg-white rounded my-4'>
           <thead className='thead-light'>
             <tr>
@@ -77,7 +69,6 @@ const RegisteredDataTables = () => {
             </tr>
           </thead>
           <tbody>
-          
             {taskList.map((task) => (
               <tr key={task._id}>
                 <td>{serialNo++}</td>
@@ -105,3 +96,14 @@ const RegisteredDataTables = () => {
 };
 
 export default RegisteredDataTables;
+
+
+
+
+
+  // // handle delete update
+  // const handleDeleteUpdateAdmin = () => {
+  //   fetch('https://volunteer-network-react.herokuapp.com/adminTasks')
+  //     .then((res) => res.json())
+  //     .then((data) => setTaskList(data));
+  // };
