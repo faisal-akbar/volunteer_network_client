@@ -48,18 +48,18 @@ Note: Admin authentication functionality is not added yet, so anyone can add eve
 
 ## Key Feature Screenshots
 
-### Logged In user Landing Page
+> Logged In User Landing Page
 
-![Landing Page](https://faisalcep.github.io/volunteer_network_client/screenshots/front-page.png)
+![Landing Page](screenshots/front-page.png)
 
-### Logged In user Dashboard
+> Logged In User Dashboard
 
-![User Dashboard](https://faisalcep.github.io/volunteer_network_client/screenshots/user-dashboard.png)
+![User Dashboard](screenshots/user-dashboard.png)
 
-### Admin Dashboard- Volunteer List
+> Admin Dashboard- Volunteer List
 
-![Admin Dashboard](https://faisalcep.github.io/volunteer_network_client/screenshots/admin-dashboard.png)
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
-### Admin Dashboard- Add Event
+> Admin Dashboard- Add Event
 
 ![Admin Dashboard](screenshots/add-event.png)
