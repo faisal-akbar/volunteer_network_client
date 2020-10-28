@@ -56,7 +56,7 @@ Note: Admin authentication functionality is not added yet, so anyone can add eve
 
 > Logged In User Dashboard
 
-[![User Dashboard](screenshots/user-dashboard.png)](#)
+[![User Dashboard](screenshots/volunteer-dashboard.png)](#)
 
 <!-- > ![User Dashboard](screenshots/user-dashboard.png) -->
 
