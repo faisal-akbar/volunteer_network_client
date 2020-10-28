@@ -12,7 +12,7 @@ A responsive social event management web application.
 - Admin also can add new event from admin dashboard.
 - Volunteer need to click on event image to register in specific event.
 - Sign in is required to register in any event or to view volunteer dashboard.
-- Logged in user will see a button name "My Tasks", where they can view the events they registered
+- Logged in user will see a button named "My Tasks", where they can view the events they registered
 - User can login through gmail or email and password if registered.
 
 Note: Admin authentication functionality is not added yet, so anyone can add event or delete volunteer from the admin dashboard.
@@ -50,16 +50,16 @@ Note: Admin authentication functionality is not added yet, so anyone can add eve
 
 > Logged In User Landing Page
 
-![Landing Page](screenshots/front-page.png)
+![Landing Page](screenshots/front-page.png)(#)
 
 > Logged In User Dashboard
 
-![User Dashboard](screenshots/user-dashboard.png)
+![User Dashboard](screenshots/user-dashboard.png)(#)
 
 > Admin Dashboard- Volunteer List
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Dashboard](screenshots/admin-dashboard.png)(#)
 
 > Admin Dashboard- Add Event
 
-![Admin Dashboard](screenshots/add-event.png)
+![Admin Dashboard](screenshots/add-event.png)(#)
