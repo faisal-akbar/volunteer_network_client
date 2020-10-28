@@ -50,16 +50,24 @@ Note: Admin authentication functionality is not added yet, so anyone can add eve
 
 > Logged In User Landing Page
 
-![Landing Page](screenshots/front-page.png)(#)
+[![Landing Page](screenshots/front-page.png)](#)
+
+<!-- ![Landing Page](screenshots/front-page.png) -->
 
 > Logged In User Dashboard
 
-![User Dashboard](screenshots/user-dashboard.png)(#)
+[![User Dashboard](screenshots/user-dashboard.png)](#)
+
+<!-- > ![User Dashboard](screenshots/user-dashboard.png) -->
 
 > Admin Dashboard- Volunteer List
 
-![Admin Dashboard](screenshots/admin-dashboard.png)(#)
+[![Admin Dashboard](screenshots/admin-dashboard.png)](#)
+
+<!-- ![Admin Dashboard](screenshots/admin-dashboard.png) -->
 
 > Admin Dashboard- Add Event
 
-![Admin Dashboard](screenshots/add-event.png)(#)
+[![Admin Dashboard](screenshots/add-event.png)](#)
+
+<!-- ![Admin Dashboard](screenshots/add-event.png) -->
