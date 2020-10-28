@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Volunteer Network
-=======
-## Volunteer Network
->>>>>>> 172519665b33fb36ab9f093b2807a2149b5fddad
 
 A responsive social event management web application.
 
@@ -66,4 +62,4 @@ Note: Admin authentication functionality is not added yet, so anyone can add eve
 
 ### Admin Dashboard- Add Event
 
-![Admin Dashboard](https://faisalcep.github.io/volunteer_network_client/screenshots/add-event.png)
+![Admin Dashboard](screenshots/add-event.png)
